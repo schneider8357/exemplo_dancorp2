@@ -33,6 +33,7 @@ class TicTacToe:
             except (ValueError, IndexError):
                 print("Invalid input. Please enter two numbers between 0 and 2.")
                 continue
+
             
             self.board[row][col] = player
             
@@ -47,6 +48,7 @@ class TicTacToe:
                 break
             
             self.turn += 1
+
 
 if __name__ == "__main__":
     game = TicTacToe()
