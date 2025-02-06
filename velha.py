@@ -41,12 +41,12 @@ def tic_tac_toe():
         if check_winner(board, player):
             print_board(board)
             print(f"Player {player} wins!")
-            break
+            exit()
         
         if is_full(board):
             print_board(board)
             print("It's a draw!")
-            break
+            exit()
         
         turn += 1
 
